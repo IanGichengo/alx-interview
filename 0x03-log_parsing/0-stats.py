@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
+''' reads stdin line by line and computes metrics '''
+
+
 import sys
 import signal
 import re
 
-# Initialize metrics
+''' Initialize metrics '''
 total_file_size = 0
 status_code_counts = {}
 line_count = 0
