@@ -6,13 +6,16 @@ import sys
 import signal
 import re
 
+
 ''' Initialize metrics '''
 total_file_size = 0
 status_code_counts = {}
 line_count = 0
 
+
 # Regex to match the correct log line format
 log_pattern = re.compile(r'^\S+ - \[\S+ \S+\] "GET /projects/260 HTTP/1.1" (\d{3}) (\d+)$')
+
 
 # Function to print statistics
 def print_stats():
