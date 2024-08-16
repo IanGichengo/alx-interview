@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-'''
-Write a script that reads stdin line by line and computes metrics
-
-'''
+'''Write a script that reads stdin line by line and computes metrics'''
 
 
 import sys
+
 
 '''store the count in a dictionary'''
 status_codes_dict = {'200': 0, '301': 0, '400': 0, '401': 0, '403': 0,
